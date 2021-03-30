@@ -117,3 +117,21 @@ function getRandomUser(users) {
 }
 
 console.log('Random user:', getRandomUser(users));
+
+
+// for of: itera los valores de un array directamente,
+// omitimos el índice xq no lo necesitamos
+for (const user of users) {
+  console.log('of', user);
+}
+
+// for in: itera los índices de un array (o un objeto)
+// con arrays
+for (const i in users) {
+  console.log('in', i);
+}
+
+// con objectos
+for (const attrKey in user) {
+  console.log('attr key:', attrKey);
+}
